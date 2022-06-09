@@ -2,27 +2,30 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">  
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-
-  Features
-  Company
-  Careers
-  About
-
-  Login
-  Register
+  <header class="main-header">
+    <div class="brandname">
+      <a href="#">snap</a>
+    </div>
+    <nav class="navbar">
+      <ul class="nav-items">
+        <li class="nav-item"><a href="#">Features</a></li>
+        <li class="nav-item"><a href="#">Company</a></li>
+        <li class="nav-item"><a href="#">Careers</a></li>
+        <li class="nav-item"><a href="#">About</a></li>
+      </ul>
+    </nav>
+    <div class="nav-buttons">
+      <a class="login-button" href="#">Login</a>
+      <a class="register-button" href="#">Register</a>
+    </div>
+  </header>
+  
 
   Make remote work
 
@@ -33,7 +36,7 @@
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Chuy Landar</a>.
   </div>
 </body>
 </html>
