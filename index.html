@@ -13,13 +13,36 @@
 <body>
   <header class="main-header">    
     <nav class="navbar">
-      <div class="brandname">
-        <a href="#">snap</a>
+      <div class="brand">
+        <a class="brandname" href="#">snap</a>
       </div>
       <ul class="nav-items">
-        <li class="nav-item"><a href="#">Features</a></li>
-        <li class="nav-item"><a href="#">Company</a></li>
-        <li class="nav-item"><a href="#">Careers</a></li>
+        <li class="nav-item dropdown-item features">
+          <a href="#">Features</a>
+          <div class="svg-container">
+            <svg class="icon-arrow-down" width="10" height="6" xmlns="http://www.w3.org/2000/svg"><path stroke="#686868" stroke-width="1.5" fill="none" d="m1 1 4 4 4-4"/></svg>
+            <svg class="icon-arrow-up" width="10" height="6" xmlns="http://www.w3.org/2000/svg"><path stroke="#686868" stroke-width="1.5" fill="none" d="m1 5 4-4 4 4"/></svg>
+          </div>
+          <div class="dropdown-content">
+            <a href="#">Todo List</a>
+            <a href="#">Calendar</a>
+            <a href="#">Reminders</a>
+            <a href="#">Planning</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown-item company">
+          <a href="#">Company</a>
+          <div class="svg-container">
+            <svg class="icon-arrow-down" width="10" height="6" xmlns="http://www.w3.org/2000/svg"><path stroke="#686868" stroke-width="1.5" fill="none" d="m1 1 4 4 4-4"/></svg>
+            <svg class="icon-arrow-up" width="10" height="6" xmlns="http://www.w3.org/2000/svg"><path stroke="#686868" stroke-width="1.5" fill="none" d="m1 5 4-4 4 4"/></svg>
+          </div>
+          <div class="dropdown-content">
+            <a href="#">History</a>
+            <a href="#">Our Team</a>
+            <a href="#">Blog</a>
+          </div>
+        </li>
+        <li class="nav-item not-available"><a href="#">Careers</a></li>
         <li class="nav-item"><a href="#">About</a></li>
       </ul>
     </nav>
