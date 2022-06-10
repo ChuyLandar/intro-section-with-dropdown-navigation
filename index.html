@@ -3,16 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">  
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
 </head>
 <body>
-  <header class="main-header">
-    <div class="brandname">
-      <a href="#">snap</a>
-    </div>
+  <header class="main-header">    
     <nav class="navbar">
+      <div class="brandname">
+        <a href="#">snap</a>
+      </div>
       <ul class="nav-items">
         <li class="nav-item"><a href="#">Features</a></li>
         <li class="nav-item"><a href="#">Company</a></li>
@@ -25,18 +28,23 @@
       <a class="register-button" href="#">Register</a>
     </div>
   </header>
-  
-
-  Make remote work
-
-  Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
-
-  Learn more
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Chuy Landar</a>.
-  </div>
+  <main>
+    <section class="text-section">
+      <h1>Make remote work</h1>
+      <p>Get your team in sync, no matter your location. Streamline processes, 
+        create team rituals, and watch productivity soar.</p>
+      <button>Learn more</button> 
+    </section>
+    <section class="image-section">
+      <img src="images/image-hero-desktop.png" alt="image of guy with a laptop">
+    </section>
+  </main>  
+    
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Chuy Landar</a>.
+    </div>
+  </footer>  
 </body>
 </html>

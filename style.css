@@ -1,10 +1,58 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100vh;
+}
+
+body{
+    background-color: hsl(0, 0%, 98%);
+    font-family: 'Epilogue', sans-serif;
+    height: 100%;
+}
+
+.navbar{
+    display: inline-block;
+}
+
+.brandname{
+    display: inline-block;
+}
 
 
+.nav-items, .nav-items li{
+    display: inline-block;
+}
+
+.nav-buttons{
+    display: inline-block;
+}
+
+main{
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.text-section, .image-section{
+    width: 50%;
+    height: 100%;
+}
 
 
+.image-section img{
+    height: 100%;
+}
 
-
-
+footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}
 
 .attribution {
     font-size: 11px; 
