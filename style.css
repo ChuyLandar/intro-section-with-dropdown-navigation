@@ -10,7 +10,6 @@ html{
 body{
     background-color: hsl(0, 0%, 98%);
     font-family: 'Epilogue', sans-serif;
-    height: 100%;
 }
 
 .main-header{
@@ -215,8 +214,11 @@ main{
 }
 
 
-.partner-images svg{
-    margin-right: 3rem; 
+.partner-images{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    width: 100%;
 }
 
 footer{
@@ -226,7 +228,7 @@ footer{
 }
 
 .attribution {
-    font-size: 11px; 
+    font-size: 0.7rem; 
     text-align: center; 
 }
 
@@ -235,3 +237,85 @@ footer{
     color: hsl(228, 45%, 44%); 
 }
 
+.hidden{
+    display: none;
+}
+
+@media (max-width: 1000px){
+
+    main {
+        height: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: normal;
+        margin: 0;
+    }
+
+    .mobile-image-section{
+        display: block;
+    }
+
+    .mobile-image-section img{
+        width: 100%;
+    }
+
+    .image-section{
+        display: none;
+    }
+
+    .text-section{
+        align-items: center;
+    }
+
+    .text-section .black-button{
+        margin-bottom: 2rem;
+    }
+
+    .text-section br{
+        display: none;
+    }
+
+    .big-header{
+        font-size: 2.3rem;
+        padding: 2.5rem 0.5rem 1.5rem;
+        text-align: center;
+    }
+
+    .description{
+        text-align: center;
+        font-size: 1rem;
+        padding: 0 0.5rem 1.5rem;
+    }
+
+    /* .databiz,
+    .audiophile,
+    .meet,
+    .maker{
+        
+    } */
+
+    .main-header{
+        padding: 1.5rem 0.5rem;
+    }
+
+    .menu-icon{
+        display: inline-block;
+    }
+
+    .nav-items,
+    .login-button,
+    .register-button{
+        display: none !important;
+    }
+
+    .nav-buttons{
+        padding: 0 1rem;
+    }
+
+    .nav-buttons a {
+        padding: 0;
+        margin: 0;
+    }
+
+
+}
