@@ -366,6 +366,10 @@ footer {
     .close-menu {
         text-align: end;
     }
+    
+    .close-menu img {
+        cursor: pointer;
+    }
 
     .mobile-nav-container .login-button:hover {
         color: black;
