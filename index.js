@@ -1,14 +1,20 @@
-var backdrop = document.querySelector(".backdrop");
-var toggleButton = document.querySelector(".menu-icon");
-var mobileNav = document.querySelector(".mobile-nav");
+const backdrop = document.querySelector(".backdrop");
+const toggleButton = document.querySelector(".menu-icon");
+const mobileNav = document.querySelector(".mobile-nav");
+const closeMenu = document.querySelector(".close-menu img");
 
 
-backdrop.addEventListener("click", function() {
+function closeMobileNav(){
   mobileNav.classList.remove("open");
   backdrop.classList.remove("open");
   setTimeout(function() {
     backdrop.style.display = "none";
   }, 200);
+}
+
+
+backdrop.addEventListener("click", function() {
+  closeMobileNav();
 });
 
 
@@ -18,4 +24,9 @@ toggleButton.addEventListener("click", function() {
   setTimeout(function() {
     backdrop.classList.add("open");
   }, 10);
+});
+
+
+closeMenu.addEventListener("click", function() {
+  closeMobileNav();
 });

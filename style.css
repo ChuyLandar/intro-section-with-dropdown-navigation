@@ -166,6 +166,7 @@ body{
 
 .nav-buttons a.register-button:hover{
     border-color: black;
+    color: black;
 }
 
 .nav-buttons .register-button{
@@ -289,7 +290,7 @@ footer{
         width: 70%;
         height: 100vh;
         transition: transform 300ms ease-out;
-      }
+    }
 
     .mobile-image-section{
         display: block;
@@ -339,20 +340,83 @@ footer{
         display: inline-block;
     }
 
-    .nav-items,
-    .login-button,
-    .register-button{
-        display: none !important;
-    }
-
     .nav-buttons{
         padding: 0 1rem;
     }
 
     .nav-buttons a {
         padding: 0;
-        margin: 0;
+        margin: 1rem;
     }
 
+    .nav-items,
+    .login-button,
+    .register-button{
+        display: none !important;
+    }
 
+    .mobile-nav-container {
+        margin: 1.5rem;
+        min-height: 50%;
+    }
+
+    .close-menu{
+        text-align: end;
+    }
+
+    .mobile-nav-container .login-button:hover{
+        color: black;
+    }
+
+    .mobile-nav-container .nav-item {
+        padding: 1rem;
+    }
+
+    .mobile-nav-container .nav-item > a,
+    .mobile-nav-container .nav-buttons > a{
+        text-decoration: none;
+        color: #6f6f6f;
+        font-size: 1rem;
+    }
+
+    .mobile-nav-container .nav-item.features > a,
+    .mobile-nav-container .nav-item.company > a{
+        padding-bottom: 0px;
+    }
+    
+    .mobile-nav-container .login-button,
+    .mobile-nav-container .register-button{
+        display: block !important;
+    }
+
+    .mobile-nav-container .nav-items{
+        display: flex !important;
+        flex-flow: column nowrap;
+    }
+
+    .mobile-nav-container .dropdown-content {
+        display: none;
+        position: relative;
+        background-color: white;
+        border-radius: 0px;
+        width: 100%;
+        overflow: auto;
+        box-shadow: none;
+        z-index: 1;
+    }
+
+    .mobile-nav-container .features .dropdown-content {
+        right: 0;
+    }
+
+    .mobile-nav-container .nav-items {
+        padding: 0;
+    }
+
+    .mobile-nav-container .nav-buttons {
+        padding: 0;
+        margin-top: 1rem;
+        width: 100%;
+        text-align: center;
+    }
 }
