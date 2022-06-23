@@ -290,6 +290,7 @@ footer {
         right: 0;
         background: white;
         width: 70%;
+        max-width: 280px;
         height: 100vh;
         transition: transform 300ms ease-out;
     }
